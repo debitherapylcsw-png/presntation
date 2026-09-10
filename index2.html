@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Therapy Sheets Home Dashboard - Frame 2</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body, html { width: 100%; height: 100%; overflow-x: hidden; font-family: Garamond, serif; background-color: #0f172a; }
+        
+        /* PREMIUM CINEMATIC NAVY DASHBOARD PANEL GRID */
+        .dashboard-container { 
+            max-width: 1200px; 
+            margin: 40px auto; 
+            padding: 30px; 
+            background: #1e293b; 
+            border: 12px solid #6b4e3d; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        .main-hub-title { font-size: 3.5rem; color: #ffffff; text-align: center; margin-bottom: 30px; text-transform: uppercase; font-family: Impact, sans-serif; letter-spacing: 3px; text-shadow: 0 4px 10px rgba(0,0,0,0.6); }
+        
+        /* RANDOMIZER ACTION BOX ROW BUTTON PANEL */
+        .action-row-panel { display: flex; justify-content: center; margin-bottom: 40px; }
+        .random-shuffle-btn { background-color: #dc3545; color: white; border: none; padding: 15px 40px; font-size: 1.5rem; font-weight: bold; border-radius: 8px; cursor: pointer; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); box-shadow: 0 5px 15px rgba(220,53,69,0.4); }
+        .random-shuffle-btn:hover { background-color: #bd2130; }
+
+        /* THE 3-COLUMN TEMPLATE CONTAINER TRACK GRID Layout */
+        .template-matrix-grid { display: flex; gap: 30px; justify-content: space-between; width: 100%; }
+        
+        /* SLEEK SEPARATE INTERACTIVE ACCESS BOXES WITHOUT BORDER CLUTTER */
+        .access-template-box { 
+            flex: 1; 
+            background-color: #111827; 
+            padding: 30px 20px; 
+            border-radius: 12px; 
+            text-align: center; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+            border: 2px solid #38bdf8;
+        }
+        
+        .box-heading-label { font-size: 1.8rem; color: #38bdf8; font-weight: bold; margin-bottom: 15px; text-transform: uppercase; }
+        .box-description-text { font-size: 1.2rem; color: #9ca3af; margin-bottom: 25px; line-height: 1.4; }
+        
+        .launch-panel-btn { display: inline-block; background-color: #2563eb; color: white; text-decoration: none; padding: 10px 25px; font-size: 1.3rem; font-weight: bold; border-radius: 6px; box-shadow: 0 4px 10px rgba(37,99,235,0.3); }
+        .launch-panel-btn:hover { background-color: #1d4ed8; }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <h1 class="main-hub-title">Therapy Sheets Master Index (V2)</h1>
+        
+        <!-- AUTOMATED RANDOMIZER SYSTEM PANEL BOX TOOL -->
+        <div class="action-row-panel">
+            <button class="random-shuffle-btn" onclick="launchRandomSlide()">🎲 Pick Random Template Slide</button>
+        </div>
+
+        <!-- REVISED GRID OF INTERACTIVE LAYOUT BOXES -->
+        <div class="template-matrix-grid">
+            
+            <div class="access-template-box">
+                <h2 class="box-heading-label">Spoon Theory</h2>
+                <p class="box-description-text">Access the complete curated pacing deck featuring interactive clinical models and animated character panels.</p>
+                <a href="spoons20.html" class="launch-panel-btn">Launch Deck ▶</a>
+            </div>
+            
+            <div class="access-template-box">
+                <h2 class="box-heading-label">Anxiety Grid</h2>
+                <p class="box-description-text">Open tracking templates and calming exercises designed to support clients mid-session during acute care.</p>
+                <a href="spoons3.html" class="launch-panel-btn">Launch Sheet ▶</a>
+            </div>
+            
+            <div class="access-template-box">
+                <h2 class="box-heading-label">Grief & Boundaries</h2>
+                <p class="box-description-text">Review somatic history charts, boundary pacing boards, and specialized clinical worksheet columns.</p>
+                <a href="spoons5.html" class="launch-panel-btn">Launch Sheet ▶</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- RANDOMIZER REDIRECTION CODE INSTRUCTIONS -->
+    <script>
+        function launchRandomSlide() {
+            var targetSlides = ["spoons20.html", "spoons3.html", "spoons5.html", "spoons6.html"];
+            var luckyPick = targetSlides[Math.floor(Math.random() * targetSlides.length)];
+            window.location.href = luckyPick;
+        }
+    </script>
+
+</body>
+</html>
